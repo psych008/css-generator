@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(137, 119, 238);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* MAIN */
+
+.container{
+    max-width: 1500px;
+    height: 650px;
+    margin: 0 auto;
+    margin-top: 120px;
+    background: radial-gradient(circle, rgba(238,174,202,0.7) 0%, rgba(148,187,233,0.7) 100%);
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.15);
+    
+}
+
+.content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* CONFIGURATION */
+
+.borderConfiguration{
+    height: 475px;
+    /* border: 1px solid rgb(255, 255, 255); */
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.10);
+}
+
+.borderConfiguration div{
+    border: 1px dashed rgba(83, 83, 83, 0.2);
+    padding: 15px;
+    margin: 10px;
+}
+
+.borderConfiguration p{
+    margin-bottom: 10px;
+    color: rgb(75, 73, 73);
+    /* display: block;
+    width: 200px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px 20px 20px 20px; */
+}
+
+/* INPUT CONFIG */
+
+input{
+    width: 300px;
+    height: 10px;
+    background: #f7f6f6e8;
+    border-radius: 50px;
+    border: 1px solid #bdbbbb;
+    outline: none;
+    margin-bottom: 30px;
+    appearance: none;
+    
+}
+
+input[type = "color"]{
+    width: 50px;
+    height: 20px;
+}
+
+input::-webkit-slider-thumb{
+    height: 25px;
+    width: 20px;
+    background-color: rgb(255, 255, 255);
+    appearance: none;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid rgb(175, 172, 172);
+}
+
+input::-moz-range-thumb{
+    height: 25px;
+    width: 20px;
+    background-color: rgb(255, 255, 255);
+    appearance: none;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid rgb(175, 172, 172);
+}
+
+/* PLACE WITH BLOCK */
+
+.result{
+    text-align: center;
+}
+
+.place{
+    width: 400px;
+    height: 400px;
+
+}
+
+.block{
+    width: 300px;
+    height: 300px;
+    box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.15);
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.copyResult{
+    padding: 15px;
+    margin-bottom: 50px;
+    color: rgb(75, 73, 73);
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.10);
+    
+}
+
+span{
+    color: rgb(75, 73, 73);
+
+}
+
+.showBrdStyle{
+    display: none;
+}

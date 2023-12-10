@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="content">
+                <div class="borderConfiguration">
+                    <div class="borderTL">
+                        <p>Border-Radius-Top-Left</p>
+                        <input type="range" value= 0 min="0" max="400" class="brdTL">
+                        <span class="showBrdTL">0</span>
+                    </div>
+                    <div class="borderTR">
+                        <p>Border-Radius-Top-Right</p>
+                        <input type="range" value= 0 min="0" max="400" class="brdTR">
+                        <span class="showBrdTR">0</span>
+                    </div>
+                    <div class="borderBL">
+                        <p>Border-Radius-Bottom-Left</p>
+                        <input type="range" value= 0 min="0" max="400" class="brdBL">
+                        <span class="showBrdBL">0</span>
+                    </div>
+                    <div class="borderBR">
+                        <p>Border-Radius-Bottom-Right</p>
+                        <input type="range" value= 0 min="0" max="400" class="brdBR">
+                        <span class="showBrdBR">0</span>
+                    </div>
+                </div>
+                <div class="result">
+                    <div class="place">
+                        <div class="block"></div>    
+                    </div>
+                    <div class="copyResult">
+                        <p class="showBrdR">border-radius: 0 0 0 0;</p>
+                        <p class="showBrd">border: 1px solid #000000</p>
+                        <p class="showBck">background-color: #000000</p>  
+                    </div>
+                </div>
+                <div class="borderConfiguration">
+                    <div class="borderWidth">
+                        <p>Border-Width</p>
+                        <input type="range" value= 0 min="0" max="10" class="brdWidth">
+                        <span class="showBrdWidth">0</span>
+                    </div>
+                    <div class="borderColor">
+                        <p>Border-Color</p>
+                        <input type="color" value = '#000000' class="brdColor">
+                        <span class="showBrdColor">#000000</span>
+                    </div>
+                    <div class="borderStyle">
+                        <p>Border-Style</p>
+                        <select name="" id="brdStyle" onchange="changeStyle()">
+                            <option value="solid">solid</option>
+                            <option value="dashed">dashed</option>
+                            <option value="dotted">dotted</option>
+                            <option value="double">double</option>
+                            <option value="groove">groove</option>
+                            <option value="hidden">hidden</option>
+                            <option value="inherit">inherit</option>
+                            <option value="initial">initial</option>
+                            <option value="inset">inset</option>
+                            <option value="none">none</option>
+                            <option value="outset">outset</option>
+                            <option value="ridge">ridge</option>
+                        </select>
+                        <span class="showBrdStyle">#000000</span>
+                    </div>
+                    <div class="backColor">
+                        <p>Background-Color</p>
+                        <input type="color" value = '#000000' class="bckColor">
+                        <span class="showBckColor">#000000</span>
+                    </div>    
+                </div>
+            </div>
+        
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
